@@ -1,0 +1,10 @@
+actor RandomizedPistol : RandomSpawner
+{
+	DropItem "Pistol"
+}
+
+actor DoomPlayerRandomized : DoomPlayer
+{
+	Player.StartItem "RandomizedPistol"
+	Player.StartItem "Clip", 50
+}
